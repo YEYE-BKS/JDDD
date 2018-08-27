@@ -1,0 +1,13 @@
+;$(function(){
+  var banleft = $(".left-xianshi>ul>li"); 
+  var banright = $(".middle-left>.left-hide");
+  
+    banleft.mouseover(function(){
+       var banleft_ID =  $(this).attr("data-id");
+       var xixi =  banright.eq(banleft_ID-1)
+       xixi.css("display","block").siblings().css("display","none");
+       $(".left-xianshi").css("display","block");
+    })
+    
+
+})   

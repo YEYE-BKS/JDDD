@@ -1,0 +1,369 @@
+@charset 'utf-8';
+
+.first{
+    height: 80px;
+    background-color: #b7bab9;
+}
+.first>div{
+    height: 100%;
+    position: relative;
+}
+.first>div>a:first-child{
+   display: block;
+   height: 100%;
+}
+.first>div>a:last-child{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFF;
+    background: rgb(45,45,45);
+    opacity: .3;
+    filter: alpha(opacity=30);
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+
+.second{
+    box-sizing: border-box;
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5;
+}
+
+.second>ul{
+    height: 100%;
+    line-height: 30px;
+    background-color: #e3e4e5;
+}
+/* .second>ul>li:nth-child(odd)>a{
+    display: block;
+    height: 100%;
+} */
+
+.second>ul>li:nth-child(odd){
+    box-sizing: border-box;
+    float: right;
+    width: 77px;
+    height: 100%;
+    text-align: center;
+    border: 1px solid transparent;
+    color: red;
+}
+/* .second>ul>li:nth-child(odd):hover{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom:none; 
+} */
+.second>ul>li:nth-child(3):hover{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom:none; 
+}
+.second>ul>li:nth-child(5):hover{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom:none; 
+}
+.second>ul>li:nth-child(7):hover{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom:none; 
+}
+.second>ul>li:nth-child(11):hover{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom:none; 
+}
+
+
+.second>ul>li:nth-child(odd)>a{
+    color: #999;
+}
+.second>ul>li:nth-child(odd):hover>a{
+    color: red;
+}
+
+.second>ul>li:nth-child(even){
+    float: right;
+    margin: 11px 5px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+.second>ul>li:nth-child(15){
+    width: 128px;
+}
+.second>ul>li:nth-child(15):hover{
+    background-color: none;
+    border: 1px solid transparent;
+}
+.second>ul>li:nth-child(15)>a:last-child{
+    color: red;
+}
+.second>ul>li:nth-child(17){
+    height: 100%;
+    width: 58px;
+    float: left;
+    margin-left: 210px;
+    line-height: 27px;
+}
+.second>ul>li:nth-child(17)>a{
+    display: block;
+    height: 100%;
+}
+.second>ul>li:nth-child(17):hover{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom:none; 
+}
+.second>ul{
+    position: relative;
+}
+.second>ul>li:last-child{
+    margin: 0px;
+    width: 190px;
+    height: 170px;
+    position: absolute;
+    top: 0px;
+    box-shadow:0 0 4px #ccc;
+}
+.second>ul>li:last-child>a{
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.myjd-hide{
+    box-sizing: border-box;
+    width: 240px;
+    height: 170px;
+    background-color: #fff;
+    position: relative;
+    top:-4px;
+    left: -1px;
+    display: none;
+    border: 1px solid #ddd;
+    z-index: 99;
+}
+
+.myjd-hide>ul{
+    margin-top:12px; 
+    width: 118px;
+    float: left;
+}
+.myjd-hide>ul>li{
+    margin-top:-4px; 
+}
+.myjd-hide>ul>li>a{
+    color: #999;
+}
+.myjd-hide>ul>li>a:hover{
+    color: red;
+}
+
+.bai-xian{
+    width: 75px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    top: -2px;
+    z-index: 100;
+    display: none;
+}
+.hide-xian{
+    width: 238px;
+    height: 1px;
+    background-color: #ddd;
+    position: relative;
+    top:100px;
+}
+
+.second>ul>li:nth-child(11):hover>.myjd-hide{
+   display: block
+}
+.second>ul>li:nth-child(11):hover>.bai-xian{
+    display: block;
+}
+
+.second>ul>li:nth-child(5):hover>.myjd-hide{
+    display: block
+ }
+ .second>ul>li:nth-child(5):hover>.bai-xian{
+     display: block;
+ }
+ .second>ul>li:nth-child(7):hover>.myjd-hide{
+    display: block
+ }
+ .second>ul>li:nth-child(7):hover>.bai-xian{
+     display: block;
+ }
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  act */
+
+.three{
+    height: 140px;
+    background-color: #f0f3ef;
+    overflow: hidden;
+}
+
+.three>.top{
+    height: 60px;
+}
+
+
+.top-left{
+    margin-left: 230px;
+    margin-top: 24px;
+    float: left;
+}
+
+.div{
+    width:530px;
+    height:35px;
+    background-color: #fff;
+    float: left
+}
+
+.input{
+    width: 500px;
+    height:35px;
+    outline:none;
+    border: 0px solid red;
+    background-color: #fff;
+    text-indent: 1em;
+}
+input::-webkit-search-cancel-button{
+  display: none;
+ }
+
+ .div2{
+     width: 40px;
+     height: 35px;
+     background-color: red;
+     float: left;
+     position: relative;
+     cursor: pointer;
+ }
+
+ /* @ @ @ @ @ @ 搜索框 */
+
+.top-right{
+    width: 188px;
+    height: 33px;
+    background-color: #fff;
+    float: left;
+    margin-top: 25px;
+    margin-left:32px;
+    border: 1px solid #e3e4e5; 
+    text-align: center;
+    position: relative;
+}
+.top-right>.mycar{
+    color: red;
+    line-height: 33px;
+}
+.top-right>.math{
+    width: 14px;
+    height: 16px;
+    background-color: red;
+    color: #fff;
+    border-radius:8px; 
+    position: absolute;
+    top: 4px;
+    right: 36px;
+}
+.top-right-hide{
+    width: 260px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #e3e4e5;
+    border-top: none;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    right:73px;
+    z-index: 99;
+    font-size: 16px;
+    display: none; 
+}
+
+.top-right:hover>.top-right-hide{
+  display: block;
+}
+
+
+/* 购物车 */
+
+.three>.middle{
+  height: 20px;
+}
+.three>.middle>ul{
+    height: 100%;
+    margin-left: 230px;
+    margin-top: 2px;
+    line-height: 20px;
+}
+
+.three>.middle>ul>li{
+    float: left;
+   margin-left: 10px;
+}
+.three>.middle>ul>li:first-child{
+    margin-left: 0px;
+    color: red;
+}
+.three>.middle>ul>li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* 纪念版 */
+
+.three>.bottom{
+    height: 40px;
+   position: relative;
+   left: 180px;
+   top: 16px;
+}
+.three>.bottom>ul>li{
+    float: left;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 30px;
+    color: #333;
+    cursor: pointer;
+}
+.three>.bottom>ul>li:hover{
+    color: red;
+}
+
+
+/* 下九个  秒杀 */
+
+
+.three>.bottom>img{
+    width: 190px;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    right:190px;
+    cursor: pointer;
+}
+
+/* 图片 品牌 */
+
+
