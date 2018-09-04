@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+<body>
+    
+      <button id="but1">400</button>
+      <button id="but2">800</button>
+
+      <div id="div" style="width: 140px;height:140px;background-color:red;position:absolute;"></div> 
+
+
+      <script>  
+        
+         var but1 = document.getElementById("but1");
+         var but2 = document.getElementById("but2");
+         var div = document.getElementById("div");
+      
+  
+         but1.onclick=function(){
+             active(div,400,9)
+         } 
+         
+         but2.onclick=function(){
+             active(div,800,9)
+         } 
+
+
+
+         function active(div,tarage,num){
+
+             clearInterval(window.intset);
+
+            window.intset = setInterval(function(){
+    
+            var juli = div.offsetLeft;
+
+            var stex = tarage>juli?num:-num;
+
+            var haha = stex + juli;
+    
+            if( Math.abs(tarage-haha)>Math.abs(stex)){
+                   div.style.left = haha+"px";
+               }else{     
+                   div.style.left = tarage + "px";            
+                   clearInterval(window.intset);       
+               }
+           },6)
+
+         }
+
+      
+      
+      </script> 
+
+
+</body>
+</html>

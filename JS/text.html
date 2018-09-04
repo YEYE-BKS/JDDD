@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="margin:0px;padding:0px;">
+    
+      <button id="but1">400</button>
+      <button id="but2">800</button>
+      <div id="div" style="width:100px;height:100px;position:absolute;background-color: fuchsia;margin-top:100px;"></div>
+
+
+      <script>
+      
+      var but1 = document.getElementById("but1");
+      var but2 = document.getElementById("but2");
+      var div = document.getElementById("div");
+
+      but1.onclick=function(){
+          anmiet(400,10)
+      }
+      but2.onclick=function(){
+          anmiet(800,-10)
+      }
+
+      
+      function anmiet(mubiao,step){
+        var targin = mubiao;
+        var lilift = div.offsetLeft;
+        
+         if(targin>mubiao){
+             step;
+        }else{
+            -step;
+        }
+
+        console.log(step)
+         var int = setInterval(function(){
+            if( Math.abs(targin-lilift)>Math.abs(step)){
+                lilift += step;
+                div.style.left=lilift+"px"; 
+            }else{
+                clearInterval(int)
+                console.log(1)
+            }
+
+         },10) 
+      }
+
+
+      
+      
+      
+      </script> 
+
+
+
+</body>
+</html>

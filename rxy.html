@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+      <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+       #cursue{
+           width: 300px;
+           height: 340px;
+           background-color: #ccc;
+           overflow: hidden;
+           position: relative;
+           margin: 60px auto;
+       }
+       #cursue>#ul1{
+           width:1200px;
+           height: 340px; 
+           position: absolute;
+       }
+       #cursue>#ul1>li{
+           width: 300px;
+           height: 340px;
+           float: left;
+       }
+       #cursue>#ul1>li>img{
+           width: 100%;
+           height: 100%;
+       }
+
+
+  
+       #ul2{
+           width: 100%;   
+           position: absolute;
+           top: 50%;
+           transform: translateY(-50%);
+       }
+       #ul2>li{
+           float: left;
+           width: 30px;
+           height: 40px;
+           background-color: red;
+           line-height: 40px;
+           text-align: center;
+           cursor: pointer;
+       }
+       #ul2>li:last-child{
+          float: right;
+       }
+
+      </style>
+     
+
+</head>
+<body>
+    
+      <div id="cursue">
+          <ul id="ul1">
+              <li><img src="./Images/1.jpg" alt=""> </li>
+              <li><img src="./Images/2.jpg" alt=""></li>
+              <li><img src="./Images/3.jpg" alt=""></li>
+              <li><img src="./Images/1.jpg" alt=""></li>
+          </ul>
+
+         <ul id="ul2">
+             <li id="ul2one">1</li>
+             <li id="ul2two">2</li>
+         </ul>
+      </div>
+
+
+       <script src="./JS/animet.js"></script>
+       <script>
+         var ul1 = document.getElementById("ul1");
+         var ul2one = document.getElementById("ul2one");
+         var ul2two = document.getElementById("ul2two");
+         var imgs = ul1.children;
+        
+        //  var dd =0
+        //  ul2one.onclick=function(){
+        //      dd--
+        //      animate(ul1,300,-8)
+        //  }
+        //  ul2two.onclick=function(){
+        //      dd++
+        //      animate(ul1,300*dd,8)
+        //  }
+        var imgWidth = 300
+
+  var count = 0;
+
+        ul2two.onclick = function () {
+
+//count最大的值 length-1
+if(count >= imgs.length-1){
+     ul1.style.left = 0;
+     count=0;
+
+}
+
+count++;
+animate(ul1, - count * imgWidth, 8);
+}
+
+//2. 点击左箭头
+ul2one.onclick = function () {
+//count最小是0
+if(count <= 0){
+    ul1.style.left = -800+"px";
+    count=3
+}
+
+count--;
+animate(ul1, - count * imgWidth, 8);
+}
+
+
+
+       </script>
+
+      
+
+   
+
+</body>
+</html>

@@ -54,11 +54,12 @@
     height: 480px;
     width: 998px;
     float: left;
+    z-index: 99;
     display: none;
 }
 
 .middle-left>div:nth-child(2){
-    display: block;
+    display: none;
 }
 
 .hide_js{
@@ -153,3 +154,41 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+
+/* 轮播图  开始@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.middle-middle{
+    width: 590px;
+    height: 470px;
+    background-color: red;
+    position: relative;
+    top: -470px;
+    left: 200px;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
